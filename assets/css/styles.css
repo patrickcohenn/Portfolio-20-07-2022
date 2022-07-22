@@ -246,5 +246,59 @@ h3{
 .card .btn:hover{
     background-color: transparent;
     border: 2px solid rgb(4, 46, 216);
+    cursor: pointer;
 }
 
+.me-contate{
+    background-color: rgb(58, 58, 59);
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.me-contate p{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.me-contate .btn{
+    border: none;
+    width: auto;
+    padding: 20px;
+}
+
+.me-contate .btn:hover{
+    background-color: rgb(4, 29, 130);
+    width: auto;
+    cursor: pointer;
+}
+
+footer{
+    position: absolute;
+    background-color: #101010;
+    width: 100%;
+    height: 240px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.redes-sociai{
+    display: flex;
+}
