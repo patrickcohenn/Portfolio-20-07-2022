@@ -206,7 +206,7 @@ h3{
 
 .card{
     background-color: #3b3939;
-    height: 365px;
+    height: 400px;
     width: 335px;
     border: 20px;
     border-radius: 30px;
@@ -300,7 +300,11 @@ footer p{
 }
 
 .redes-sociais{
-    background-color: blue;
+    display: flex;
+}
+
+.redes-sociais a{
+    background-color: rgb(4, 29, 130);
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -313,4 +317,16 @@ footer p{
     display: flex;
     justify-content: center;
     flex-direction: row;
+}
+
+.redes-sociais a:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.Copyright p{
+    position: relative;
+    color: rgb(6, 47, 182);
+    font-size: 15px;
+    margin-bottom: 35px;
 }
