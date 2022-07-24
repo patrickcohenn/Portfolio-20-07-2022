@@ -11,15 +11,16 @@
 <body>
     <div class="background">
         <nav>
-            <h2>Portfó<span>lio</span></h2>
+            <h2 class="logo">Portfó<span>lio</span></h2>
             <ul class="cabecalho-link">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#anchor">Sobre Mim</a>
                 <li><a href="#">Serviços</a></li>
                 <li><a href="#">Habilidade</a></li>
                 <li><a href="#">Contato</a></li>
+                <a href="#" class="btn">Se Inscrever</a>
             </ul><!--CAbecalho link-->
-            <a href="#" class="btn">Se Inscrever</a>
+            
         </nav>
         <div class="main">
             <h4>Olá, Meu nome e</h4>
@@ -32,10 +33,29 @@
                 </form>
             </div><!--container-btn-->
         </div> <!--Main-->
+        <aside><!--Responsivo-->
+            <div class="icon-menu" onclick="abrirmenu()">
+                <div class="menu"><i class="fa fa-bars"></i><!--<icon-icon name="menu-outline"></icon-icon>-->
+                </div><!--menu-->
+            </div><!--icon-menu-->
+            <div id="barra-menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#anchor">Sobre Mim</a>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Habilidade</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <a href="#" class="c-icon">Se Inscrever</a>
+                </ul>
+            </div>
+        </aside>
     </div><!--Background-->
+
     <section class="background-color-sobre" id="anchor">
         <div class="main-sobre">
-            <img src="./assets/lib/img/main-img.png" alt="">
+            <div class="main-img">
+                <img src="./assets/lib/img/main-img.png" alt="">
+            </div>
             <div class="text-sobre">
                 <h2>Sobre Mim</h2>
                 <h5>Desenvolvedor <span>& Designer</span></h5>
@@ -45,15 +65,18 @@
                     Busco minha efetivação no mercado de trabalho e desenvolver de um bom trabalho com o objetivo de alcançar bons resultados, colaborando com o desenvolvimento da empresa.
                     No aguardo de contato, coloco-me à disposição para prestar maiores esclarecimentos.
                     Atenciosamente,
-                    Patrick Cohenn Resende Marques Fernandes</p>
+                    Patrick Cohenn Resende Marques Fernandes
+                </p>
                 <button class="button">Vamos Começar</button>
             </div><!--text-sobre-->
         </div><!--main-sobre-->
     </section><!--background-color-sobre-->
+
     <div class="container-servico">
         <div class="title">
             <h2>Nosso Serviços</h2>
         </div><!--title-->
+
         <div class="caixa">
             <div class="card">
                 <i class="fa fa-bars"></i>
@@ -65,6 +88,7 @@
                 </p>
                 <button class="btn">Ler mais</button>
             </div><!--Card-->
+
             <div class="card">
                 <i class="fa fa-user"></i>
                 <h5>Desenvolvedor web</h5>
@@ -75,6 +99,7 @@
                 </p>
                 <button class="btn">Ler mais</button>
             </div><!--Card-->
+
             <div class="card">
                 <i class="fa fa-bell"></i>
                 <h5>Desenvolvedor web</h5>
@@ -87,10 +112,12 @@
             </div><!--Card-->
         </div><!--caixa-->
     </div><!--container-servico-->
+
     <div class="me-contate">
         <p></p>
         <button class="btn">Enviar mensagem</button>
     </div><!--me-contate-->
+
     <footer>
         <h4>Patrick Cohenn</h4>
         <p>Para mais HTML & CSS básico entre nas redes sociais</p>
@@ -103,5 +130,7 @@
             <p>Copyright By Patrick Cohenn</p>
         </div>
     </footer>
+    <script src="./assets/js/script.js"></script>
+    <!--Procurar como colocar icon de hamburg animando-->
 </body>
 </html>
