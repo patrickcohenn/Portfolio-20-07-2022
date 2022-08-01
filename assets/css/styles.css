@@ -133,6 +133,16 @@ h3{
     width: 430px;
 }
 
+
+.glass{
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 0 rgba(18, 22 87, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 20px;
+    border:2px solid rgba(255, 255, 255, 0.18)
+}
+
 /*------------ Menu para Responsivo ---------------*/
 aside{
     position: absolute;
@@ -185,10 +195,10 @@ aside{
     overflow: hidden;
 }
 
-/*------------ Menu para Responsivo ---------------*/
+/*--------- Fim Menu para Responsivo ---------------*/
 
 .text-sobre{
-    width: 550px;
+    width: 50%;
 }
 
 .main-sobre{
@@ -471,9 +481,55 @@ footer p{
     margin-bottom: 35px;
 }
 
+.container-nome{
+    display: inline-flex;
+}
+
+.container-nome .estatico{
+    font-weight: 400;
+}
+
+.container-nome .dinamico{
+    margin-left: 15px;
+}
+
+.dinamico li{
+    list-style: none;
+    font-weight: 400;
+}
+
+
+.dinamico li span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 3px solid rgb(4, 29, 130);
+    animation: typing 2s steps(10) infinite;
+    background: rgb(0, 0, 0);    
+}
+
+.dinamico li span{
+    position: relative;
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
 /*Criando Responsivo com o Mida Query*/
 @media screen and (max-width: 376px){
+    *{
+        overflow-x: hidden;
+    }
     .cabecalho-link{
+        display: none;
+    }
+
+    nav .btn{
         display: none;
     }
     
@@ -494,18 +550,22 @@ footer p{
         background-color: rgb(4, 29, 130);
         text-transform: none;
         font-weight: bold;
+        text-decoration: none;
         padding: 10px 5px;
         border-radius: 30px;
         width: 150px;
-        margin-left: 25px;
+        margin-left: 15px;
     }
 
-    .main h1,h3{
+    .main h1{
+        font-size: 30px;
+    }
+    .main h4,h3{
         font-size: 25px;
     }
 
     .container-btn form{
-        width: 150px;
+        width: 300px;
         max-width: 100%;
         margin-left: -2px;
         position: relative;
@@ -520,7 +580,15 @@ footer p{
         width: 280px;
         height: auto;
         border-radius: 10px;
-        margin-left: -180px;
+        margin-left: 45px;
+    }
+
+    .main-sobre{
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column;
     }
 
     .text-sobre h2{
@@ -529,28 +597,202 @@ footer p{
     }
 
     .text-sobre h5{
-        margin-left: -180px;
-        font-size: 15px;
+        margin-left: 20px;
+        font-size: 20px;
     }
 
     .text-sobre h2, h5, p{
-        font-size: 15px;
+        font-size: 35px;
         width: 300px;
-        margin-left: -180px;
+        margin-left: 20px;
     }
 
-    .text-sobre .bottom{
-        margin-left: -180px;
+    .text-sobre p{
+        width: 60%;
     }
 
+    .main-sobre .button{
+        margin-left: -200px;
+    }
     .container-servico h2{
         margin-left: -380px;
         font-size: 40px;
     }
 
+    .card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 430px;
+    }
+
+    .card h5, p{
+        margin-left: 20px;
+        text-align: justify;
+        margin: 10px 15px;
+    }
+
+    .card h5{
+        text-align: center;
+    }
+
+    .card .btn{
+        margin: -5px;
+    }
     .me-contate p{
         text-align: center;
         align-items: center;
         font-size: 20px;
     }
+    
+    footer{
+        height: 295px;
+    }
+
+    .redes-sociais a{
+        width: 50px;
+        height: 50px;
+    }
 }
+
+
+@media screen and (max-width: 415px){
+    *{
+        overflow-x: hidden;
+    }
+    .cabecalho-link{
+        display: none;
+    }
+
+    nav .btn{
+        display: none;
+    }
+    
+    .logo{
+        font-size: 40px;
+    }
+
+    .icon-menu .menu{
+        display: block;
+    }
+    #barra-menu{
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .c-icon{
+        border: 2px solid transparent;
+        background-color: rgb(4, 29, 130);
+        text-transform: none;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 5px;
+        border-radius: 30px;
+        width: 150px;
+        margin-left: 15px;
+    }
+
+    .main h1{
+        font-size: 30px;
+    }
+    .main h4,h3{
+        font-size: 25px;
+    }
+
+    .container-btn form{
+        width: 300px;
+        max-width: 100%;
+        margin-left: -2px;
+        position: relative;
+    }
+
+    .background-color-sobre{
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-img img{
+        width: 280px;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 60px;
+    }
+
+    .main-sobre{
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .text-sobre h2{
+        margin-left: -180px;
+        font-size: 15px;
+    }
+
+    .text-sobre h5{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .text-sobre h2, h5, p{
+        font-size: 35px;
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .text-sobre p{
+        width: 60%;
+    }
+
+    .main-sobre .button{
+        margin-left: -200px;
+    }
+    .container-servico h2{
+        margin-left: -358px;
+        font-size: 40px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 430px;
+        width: 380px;
+    }
+
+    .card h5, p{
+        margin-left: 20px;
+        text-align: justify;
+        margin: 10px 15px;
+    }
+
+    .card h5{
+        text-align: center;
+    }
+
+    .card .btn{
+        margin: -5px;
+    }
+    .me-contate p{
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    footer{
+        height: 290px;
+        border: 2px;
+        padding-top: 10px;
+    }
+
+    .redes-sociais a{
+        width: 50px;
+        height: 50px;
+    }
+}
+/*Criando Responsivo com o Mida Query*/
+
