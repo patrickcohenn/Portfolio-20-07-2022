@@ -1,0 +1,54 @@
+
+.caixa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: 400px;
+    width: 335px;
+    border: 20px;
+    border-radius: 30px;
+    margin: 15px;
+    background-color:  rgb(39, 38, 38);
+}
+
+.card i{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    margin: 25px 0px;
+    padding: 15px;
+    color: rgb(4, 46, 216);
+}
+
+.card h5{
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.card p{
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+
+.card .btn{
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+}
+
+.card .btn:hover{
+    background-color: transparent;
+    cursor: pointer;
+    transform: scale(1);
+    transition: .3s;
+    border: 2px solid rgb(4, 46, 216);
+}

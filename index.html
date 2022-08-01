@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="./assets/lib/icons/fontawesome/css/all.min.css">
+    <!--All CSS-->
+        <!--Swiper CSS-->
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+        <!--Icons-CSS-->
+        <link rel="stylesheet" type="text/css" href="./assets/lib/icons/fontawesome/css/all.min.css">
+        
+        <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!--Fim All CSS-->
     <title>Patrick Cohenn</title>
 </head>
 <body>
@@ -20,7 +27,22 @@
                 <li><a href="#">Contato</a></li>
                 <a href="#" class="btn">Se Inscrever</a>
             </ul><!--CAbecalho link-->
-            
+            <aside><!--Responsivo-->
+                <div class="icon-menu" onclick="abrirmenu()">
+                    <div class="menu"><i class="fa fa-bars"></i><!--<icon-icon name="menu-outline"></icon-icon>-->
+                    </div><!--menu-->
+                </div><!--icon-menu-->
+                <div id="barra-menu">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#anchor">Sobre Mim</a>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Habilidade</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <a href="#" class="c-icon">Se Inscrever</a>
+                    </ul>
+                </div>
+            </aside>
         </nav>
         <div class="main">
             <h4>Olá, Meu nome e</h4>
@@ -33,22 +55,6 @@
                 </form>
             </div><!--container-btn-->
         </div> <!--Main-->
-        <aside><!--Responsivo-->
-            <div class="icon-menu" onclick="abrirmenu()">
-                <div class="menu"><i class="fa fa-bars"></i><!--<icon-icon name="menu-outline"></icon-icon>-->
-                </div><!--menu-->
-            </div><!--icon-menu-->
-            <div id="barra-menu">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#anchor">Sobre Mim</a>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Habilidade</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <a href="#" class="c-icon">Se Inscrever</a>
-                </ul>
-            </div>
-        </aside>
     </div><!--Background-->
 
     <section class="background-color-sobre" id="anchor">
@@ -72,49 +78,214 @@
         </div><!--main-sobre-->
     </section><!--background-color-sobre-->
 
-    <div class="container-servico">
+    <div class="container-projetos">
         <div class="title">
             <h2>Nosso Serviços</h2>
         </div><!--title-->
 
-        <div class="caixa">
-            <div class="card">
-                <i class="fa fa-bars"></i>
-                <h5>Desenvolvedor Web</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Quidem illum quos labore magni provident nobis perferendis 
-                    error cum modi explicabo iure quae perspiciatis doloremque, 
-                    et ullam aliquam. Soluta, maxime repudiandae!
-                </p>
-                <button class="btn">Ler mais</button>
-            </div><!--Card-->
-
-            <div class="card">
-                <i class="fa fa-user"></i>
-                <h5>Desenvolvedor web</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Quidem illum quos labore magni provident nobis perferendis 
-                    error cum modi explicabo iure quae perspiciatis doloremque, 
-                    et ullam aliquam. Soluta, maxime repudiandae!
-                </p>
-                <button class="btn">Ler mais</button>
-            </div><!--Card-->
-
-            <div class="card">
-                <i class="fa fa-bell"></i>
-                <h5>Desenvolvedor web</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Quidem illum quos labore magni provident nobis perferendis 
-                    error cum modi explicabo iure quae perspiciatis doloremque, 
-                    et ullam aliquam. Soluta, maxime repudiandae!
-                </p>
-                <button class="btn">Ler mais</button>
-            </div><!--Card-->
-        </div><!--caixa-->
-    </div><!--container-servico-->
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-warpper swiper-wrapper">
+                    <!--Card 1-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./assets/lib/img/background.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Patrick Cohenn</h2>
+                            <p class="descripion">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Dolorum praesentium, explicabo mollitia rerum reprehenderit 
+                                ex ea iure sapiente nemo similique optio, at quibusdam harum 
+                                doloremque officiis sequi. Molestiae, id blanditiis.
+                            </p>
+                            <button class="button">
+                                Ver mais
+                            </button>
+                        </div>
+                    </div>
+                    <!--Card 2-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./assets/lib/img/background.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Patrick Cohenn</h2>
+                            <p class="descripion">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Dolorum praesentium, explicabo mollitia rerum reprehenderit 
+                                ex ea iure sapiente nemo similique optio, at quibusdam harum 
+                                doloremque officiis sequi. Molestiae, id blanditiis.
+                            </p>
+                            <button class="button">
+                                Ver mais
+                            </button>
+                        </div>
+                    </div>
+                    <!--Card 3-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./assets/lib/img/background.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Patrick Cohenn</h2>
+                            <p class="descripion">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Dolorum praesentium, explicabo mollitia rerum reprehenderit 
+                                ex ea iure sapiente nemo similique optio, at quibusdam harum 
+                                doloremque officiis sequi. Molestiae, id blanditiis.
+                            </p>
+                            <button class="button">
+                                Ver mais
+                            </button>
+                        </div>
+                    </div>
+                    <!--Card 4-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./assets/lib/img/background.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Patrick Cohenn</h2>
+                            <p class="descripion">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Dolorum praesentium, explicabo mollitia rerum reprehenderit 
+                                ex ea iure sapiente nemo similique optio, at quibusdam harum 
+                                doloremque officiis sequi. Molestiae, id blanditiis.
+                            </p>
+                            <button class="button">
+                                Ver mais
+                            </button>
+                        </div>
+                    </div>
+                    <!--Card 5-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./assets/lib/img/background.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Patrick Cohenn</h2>
+                            <p class="descripion">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Dolorum praesentium, explicabo mollitia rerum reprehenderit 
+                                ex ea iure sapiente nemo similique optio, at quibusdam harum 
+                                doloremque officiis sequi. Molestiae, id blanditiis.
+                            </p>
+                            <button class="button">
+                                Ver mais
+                            </button>
+                        </div>
+                    </div>
+                    <!--Card 6-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./assets/lib/img/background.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Patrick Cohenn</h2>
+                            <p class="descripion">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Dolorum praesentium, explicabo mollitia rerum reprehenderit 
+                                ex ea iure sapiente nemo similique optio, at quibusdam harum 
+                                doloremque officiis sequi. Molestiae, id blanditiis.
+                            </p>
+                            <button class="button">
+                                Ver mais
+                            </button>
+                        </div>
+                    </div>
+                    <!--Card 7-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./assets/lib/img/background.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Patrick Cohenn</h2>
+                            <p class="descripion">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Dolorum praesentium, explicabo mollitia rerum reprehenderit 
+                                ex ea iure sapiente nemo similique optio, at quibusdam harum 
+                                doloremque officiis sequi. Molestiae, id blanditiis.
+                            </p>
+                            <button class="button">
+                                Ver mais
+                            </button>
+                        </div>
+                    </div>
+                    <!--Card 8-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./assets/lib/img/background.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Patrick Cohenn</h2>
+                            <p class="descripion">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Dolorum praesentium, explicabo mollitia rerum reprehenderit 
+                                ex ea iure sapiente nemo similique optio, at quibusdam harum 
+                                doloremque officiis sequi. Molestiae, id blanditiis.
+                            </p>
+                            <button class="button">
+                                Ver mais
+                            </button>
+                        </div>
+                    </div>
+                    <!--Card 9-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./assets/lib/img/background.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Patrick Cohenn</h2>
+                            <p class="descripion">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Dolorum praesentium, explicabo mollitia rerum reprehenderit 
+                                ex ea iure sapiente nemo similique optio, at quibusdam harum 
+                                doloremque officiis sequi. Molestiae, id blanditiis.
+                            </p>
+                            <button class="button">
+                                Ver mais
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn" ></div>
+            <div class="swiper-button-prev swiper-navBtn" ></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+    </div><!--container-projetos-->
 
     <div class="me-contate">
-        <p></p>
+        <p>Para mais HTML & CSS básico</p>
         <button class="btn">Enviar mensagem</button>
     </div><!--me-contate-->
 
@@ -130,6 +301,9 @@
             <p>Copyright By Patrick Cohenn</p>
         </div>
     </footer>
+    <!--Swiper JS-->
+    <script src="./assets/JS/swiper-bundle.min.js"></script>
+    <!--JS-->
     <script src="./assets/js/script.js"></script>
     <!--Procurar como colocar icon de hamburg animando-->
 </body>
